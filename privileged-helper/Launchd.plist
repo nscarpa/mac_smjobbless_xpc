@@ -4,5 +4,10 @@
 <dict>
 	<key>Label</key>
 	<string>it.nicoloscarpa.studio.privileged-helper</string>
+	<key>MachServices</key>
+	<dict>
+		<key>it.nicoloscarpa.studio.privileged-helper</key>
+		<true/>
+	</dict>
 </dict>
 </plist>
