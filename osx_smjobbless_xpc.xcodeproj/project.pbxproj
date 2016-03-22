@@ -11,7 +11,7 @@
 		3D23238F1CA1C91F009AD072 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D23238E1CA1C91F009AD072 /* main.m */; };
 		3D2323911CA1C91F009AD072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2323901CA1C91F009AD072 /* Assets.xcassets */; };
 		3D2323941CA1C91F009AD072 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2323921CA1C91F009AD072 /* MainMenu.xib */; };
-		3D2323A21CA1C9AA009AD072 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2323A11CA1C9AA009AD072 /* main.m */; };
+		3D2323A21CA1C9AA009AD072 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D2323A11CA1C9AA009AD072 /* main.c */; };
 		3D548AE91CA1CF57004DE1BC /* it.nicoloscarpa.studio.privileged-helper in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D23239F1CA1C9AA009AD072 /* it.nicoloscarpa.studio.privileged-helper */; };
 		3D548AED1CA1D23F004DE1BC /* JobBlesser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D548AEC1CA1D23F004DE1BC /* JobBlesser.m */; };
 /* End PBXBuildFile section */
@@ -57,7 +57,7 @@
 		3D2323931CA1C91F009AD072 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		3D2323951CA1C91F009AD072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D23239F1CA1C9AA009AD072 /* it.nicoloscarpa.studio.privileged-helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "it.nicoloscarpa.studio.privileged-helper"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D2323A11CA1C9AA009AD072 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D2323A11CA1C9AA009AD072 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		3D548AE51CA1CDCF004DE1BC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D548AEA1CA1D02C004DE1BC /* Launchd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Launchd.plist; sourceTree = "<group>"; };
 		3D548AEB1CA1D23F004DE1BC /* JobBlesser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobBlesser.h; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 		3D2323A01CA1C9AA009AD072 /* privileged-helper */ = {
 			isa = PBXGroup;
 			children = (
-				3D2323A11CA1C9AA009AD072 /* main.m */,
+				3D2323A11CA1C9AA009AD072 /* main.c */,
 				3D548AE51CA1CDCF004DE1BC /* Info.plist */,
 				3D548AEA1CA1D02C004DE1BC /* Launchd.plist */,
 			);
@@ -236,7 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D2323A21CA1C9AA009AD072 /* main.m in Sources */,
+				3D2323A21CA1C9AA009AD072 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

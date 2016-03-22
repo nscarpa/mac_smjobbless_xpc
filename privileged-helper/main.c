@@ -1,12 +1,11 @@
 //
-//  main.m
+//  main.c
 //  privileged-helper
 //
 //  Created by Studio on 22/03/16.
 //  Copyright © 2016 Studio. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #include <xpc/xpc.h>
 
 static const char* helper_name = "it.nicoloscarpa.studio.privileged-helper";
