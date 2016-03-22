@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "JobBlesser.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,20 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
+    JobBlesser *jobBlesser = [[JobBlesser alloc] init];
+    
+    NSError *error = nil;
+    BOOL result = NO;
+
+    result = [jobBlesser blessHelperWithLabel:@"it.nicoloscarpa.studio.privileged-helper" error:&error];
+    
+    if (!result) {
+        NSLog(@"Something went wrong! %@ / %d", [error domain], (int) [error code]);
+        
+        return;
+    }
+    
+    NSLog(@"Job is available!");
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

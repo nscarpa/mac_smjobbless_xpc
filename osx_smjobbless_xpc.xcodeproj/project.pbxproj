@@ -11,7 +11,42 @@
 		3D23238F1CA1C91F009AD072 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D23238E1CA1C91F009AD072 /* main.m */; };
 		3D2323911CA1C91F009AD072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2323901CA1C91F009AD072 /* Assets.xcassets */; };
 		3D2323941CA1C91F009AD072 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2323921CA1C91F009AD072 /* MainMenu.xib */; };
+		3D2323A21CA1C9AA009AD072 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2323A11CA1C9AA009AD072 /* main.m */; };
+		3D548AE91CA1CF57004DE1BC /* it.nicoloscarpa.studio.privileged-helper in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D23239F1CA1C9AA009AD072 /* it.nicoloscarpa.studio.privileged-helper */; };
+		3D548AED1CA1D23F004DE1BC /* JobBlesser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D548AEC1CA1D23F004DE1BC /* JobBlesser.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D548AE61CA1CF1C004DE1BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D23237F1CA1C91F009AD072 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D23239E1CA1C9AA009AD072;
+			remoteInfo = "privileged-helper";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3D23239D1CA1C9AA009AD072 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		3D548AE81CA1CF40004DE1BC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchServices;
+			dstSubfolderSpec = 1;
+			files = (
+				3D548AE91CA1CF57004DE1BC /* it.nicoloscarpa.studio.privileged-helper in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3D2323871CA1C91F009AD072 /* osx_smjobbless_xpc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = osx_smjobbless_xpc.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,10 +56,23 @@
 		3D2323901CA1C91F009AD072 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D2323931CA1C91F009AD072 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		3D2323951CA1C91F009AD072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D23239F1CA1C9AA009AD072 /* it.nicoloscarpa.studio.privileged-helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "it.nicoloscarpa.studio.privileged-helper"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D2323A11CA1C9AA009AD072 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D548AE51CA1CDCF004DE1BC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D548AEA1CA1D02C004DE1BC /* Launchd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Launchd.plist; sourceTree = "<group>"; };
+		3D548AEB1CA1D23F004DE1BC /* JobBlesser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobBlesser.h; sourceTree = "<group>"; };
+		3D548AEC1CA1D23F004DE1BC /* JobBlesser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobBlesser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3D2323841CA1C91F009AD072 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D23239C1CA1C9AA009AD072 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				3D2323891CA1C91F009AD072 /* osx_smjobbless_xpc */,
+				3D2323A01CA1C9AA009AD072 /* privileged-helper */,
 				3D2323881CA1C91F009AD072 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				3D2323871CA1C91F009AD072 /* osx_smjobbless_xpc.app */,
+				3D23239F1CA1C9AA009AD072 /* it.nicoloscarpa.studio.privileged-helper */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,6 +109,8 @@
 				3D2323921CA1C91F009AD072 /* MainMenu.xib */,
 				3D2323951CA1C91F009AD072 /* Info.plist */,
 				3D23238D1CA1C91F009AD072 /* Supporting Files */,
+				3D548AEB1CA1D23F004DE1BC /* JobBlesser.h */,
+				3D548AEC1CA1D23F004DE1BC /* JobBlesser.m */,
 			);
 			path = osx_smjobbless_xpc;
 			sourceTree = "<group>";
@@ -71,6 +123,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3D2323A01CA1C9AA009AD072 /* privileged-helper */ = {
+			isa = PBXGroup;
+			children = (
+				3D2323A11CA1C9AA009AD072 /* main.m */,
+				3D548AE51CA1CDCF004DE1BC /* Info.plist */,
+				3D548AEA1CA1D02C004DE1BC /* Launchd.plist */,
+			);
+			path = "privileged-helper";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,15 +143,34 @@
 				3D2323831CA1C91F009AD072 /* Sources */,
 				3D2323841CA1C91F009AD072 /* Frameworks */,
 				3D2323851CA1C91F009AD072 /* Resources */,
+				3D548AE81CA1CF40004DE1BC /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3D548AE71CA1CF1C004DE1BC /* PBXTargetDependency */,
 			);
 			name = osx_smjobbless_xpc;
 			productName = osx_smjobbless_xpc;
 			productReference = 3D2323871CA1C91F009AD072 /* osx_smjobbless_xpc.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3D23239E1CA1C9AA009AD072 /* it.nicoloscarpa.studio.privileged-helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D2323A31CA1C9AA009AD072 /* Build configuration list for PBXNativeTarget "it.nicoloscarpa.studio.privileged-helper" */;
+			buildPhases = (
+				3D23239B1CA1C9AA009AD072 /* Sources */,
+				3D23239C1CA1C9AA009AD072 /* Frameworks */,
+				3D23239D1CA1C9AA009AD072 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "it.nicoloscarpa.studio.privileged-helper";
+			productName = "privileged-helper";
+			productReference = 3D23239F1CA1C9AA009AD072 /* it.nicoloscarpa.studio.privileged-helper */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -101,6 +182,10 @@
 				ORGANIZATIONNAME = Studio;
 				TargetAttributes = {
 					3D2323861CA1C91F009AD072 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = TAWSW7AL9X;
+					};
+					3D23239E1CA1C9AA009AD072 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
 				};
@@ -119,6 +204,7 @@
 			projectRoot = "";
 			targets = (
 				3D2323861CA1C91F009AD072 /* osx_smjobbless_xpc */,
+				3D23239E1CA1C9AA009AD072 /* it.nicoloscarpa.studio.privileged-helper */,
 			);
 		};
 /* End PBXProject section */
@@ -141,11 +227,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D23238F1CA1C91F009AD072 /* main.m in Sources */,
+				3D548AED1CA1D23F004DE1BC /* JobBlesser.m in Sources */,
 				3D23238C1CA1C91F009AD072 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3D23239B1CA1C9AA009AD072 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D2323A21CA1C9AA009AD072 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D548AE71CA1CF1C004DE1BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D23239E1CA1C9AA009AD072 /* it.nicoloscarpa.studio.privileged-helper */;
+			targetProxy = 3D548AE61CA1CF1C004DE1BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3D2323921CA1C91F009AD072 /* MainMenu.xib */ = {
@@ -176,7 +279,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -219,7 +322,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -242,11 +345,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = osx_smjobbless_xpc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "it.nicoloscarpa.studio.osx-smjobbless-xpc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -254,10 +360,47 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = osx_smjobbless_xpc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "it.nicoloscarpa.studio.osx-smjobbless-xpc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		3D2323A41CA1C9AA009AD072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"privileged-helper/Info.plist",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"privileged-helper/Launchd.plist",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3D2323A51CA1C9AA009AD072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"privileged-helper/Info.plist",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"privileged-helper/Launchd.plist",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -281,6 +424,16 @@
 				3D23239A1CA1C91F009AD072 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D2323A31CA1C9AA009AD072 /* Build configuration list for PBXNativeTarget "it.nicoloscarpa.studio.privileged-helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D2323A41CA1C9AA009AD072 /* Debug */,
+				3D2323A51CA1C9AA009AD072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

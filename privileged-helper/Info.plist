@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>it_IT</string>
+	<key>CFBundleIdentifier</key>
+	<string>it.nicoloscarpa.studio.privileged-helper</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Privileged Helper</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>SMAuthorizedClients</key>
+	<array>
+		<string>identifier "it.nicoloscarpa.studio.osx-smjobbless-xpc" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: nicolo.scarpa.work@gmail.com (7AW94J9T94)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+	</array>
+</dict>
+</plist>
